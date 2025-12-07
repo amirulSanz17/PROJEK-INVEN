@@ -1,6 +1,5 @@
-import java.util.Scanner;
-
 import inv.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +12,7 @@ public class Main {
         inv.tambahBarang(new Item(3, "Keyboard", 300000, 15));
         inv.tambahBarang(new Item(4, "Monitor", 2000000, 5));
         inv.tambahBarang(new Item(5, "Headphone", 500000, 8));
+
 
         while (true) {
             System.out.println("\n=== SISTEM MANAJEMEN INVENTARIS ===");
@@ -41,6 +41,7 @@ public class Main {
                     System.out.println("\nBarang telah diurutkan berdasarkan NAMA"); 
                     inv.tampilkanBarang(); }
                 case 5 -> {
+                    inv.urutkanNama();
                     System.out.print("\nMasukkan nama barang: ");
                     String nama = input.nextLine();
                     System.out.println(inv.cariNama(nama));

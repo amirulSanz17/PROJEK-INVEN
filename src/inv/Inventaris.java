@@ -14,8 +14,8 @@ public class Inventaris {
 
     // Menampilkan seluruh barang dalam inventaris
     public void tampilkanBarang() {
-        for (Item b : daftarBarang) {
-            System.out.println(b);
+        for (Item barang: daftarBarang) {
+            System.out.println(barang);
         }
     }
 
